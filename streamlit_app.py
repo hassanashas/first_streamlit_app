@@ -32,4 +32,5 @@ streamlit.text(my_data_row)
 
 my_cur.execute("select * from fruit_load_list")
 my_data_row = my_cur.fetchone()
-streamlit.text("The Fruit List Contains: ", my_data_row)
+streamlit.text("The Fruit List Contains: ")
+streamlit.text(my_data_row)
